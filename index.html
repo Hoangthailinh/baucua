@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bầu Cua Game</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Trò chơi Bầu Cua</h1>
+    <div id="game-board">
+      <div class="result-images">
+        <img
+          src="./img/Screenshot 2024-10-07 232527.png"
+          id="result1"
+          data-animal="bau"
+        />
+        <img
+          src="./img/Screenshot 2024-10-07 232527.png"
+          id="result2"
+          data-animal="bau"
+        />
+        <img
+          src="./img/Screenshot 2024-10-07 232527.png"
+          id="result3"
+          data-animal="bau"
+        />
+      </div>
+      <button class="button" id="spin-button">Quay</button>
+      <div class="bet-images">
+        <div>
+          <img
+            src="./img/Screenshot 2024-10-07 232527.png"
+            id="bau"
+            data-animal="bau"
+          />
+          <p id="bau-score">0</p>
+        </div>
+        <div>
+          <img
+            src="./img/Screenshot 2024-10-07 232536.png"
+            id="cua"
+            data-animal="cua"
+          />
+          <p id="cua-score">0</p>
+        </div>
+        <div>
+          <img
+            src="./img/Screenshot 2024-10-07 232546.png"
+            id="tom"
+            data-animal="tom"
+          />
+          <p id="tom-score">0</p>
+        </div>
+        <div>
+          <img
+            src="./img/Screenshot 2024-10-07 232553.png"
+            id="ca"
+            data-animal="ca"
+          />
+          <p id="ca-score">0</p>
+        </div>
+        <div>
+          <img
+            src="./img/Screenshot 2024-10-07 232600.png"
+            id="nai"
+            data-animal="nai"
+          />
+          <p id="nai-score">0</p>
+        </div>
+        <div>
+          <img
+            src="./img/Screenshot 2024-10-07 232609.png"
+            id="ga"
+            data-animal="ga"
+          />
+          <p id="ga-score">0</p>
+        </div>
+      </div>
+      <button class="button" id="reset-button">Đặt lại</button>
+      <div id="bet-status"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
+

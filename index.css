@@ -1,0 +1,92 @@
+body {
+  text-align: center;
+  margin-top: 150px;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+#game-board {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 20px;
+  background-color: white;
+}
+
+.result-images,
+.bet-images {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.result-images img,
+.bet-images img {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  border: 1px solid #000;
+}
+
+.bet-images div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.bet-images div p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.button {
+  padding: 15px 15px;
+  font-size: 16px;
+  margin-top: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+}
+
+#spin-button {
+  margin-left: 600px;
+  background-color: #28a745;
+}
+
+#reset-button {
+  background-color: #28a745;
+  margin-left: 600px;
+}
+
+#bet-status {
+  margin-top: 20px;
+  font-size: 16px;
+  color: red;
+}
+
+#instructions {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Animation for spinning effect */
+.spin {
+  animation: spinEffect 1s linear infinite;
+}
+
+@keyframes spinEffect {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
